@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -19,14 +20,26 @@ font-family:Arial;
 body{
 background:#f4f6f9;
 color:#333;
-line-height:1.6;
+}
+
+nav{
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
 }
 
 header{
-background:#111;
-color:white;
 text-align:center;
-padding:60px 20px;
+padding:80px 20px;
 }
 
 header h1{
@@ -35,6 +48,164 @@ margin-bottom:10px;
 }
 
 header p{
+color:#555;
+}
+
+.buttons{
+margin-top:20px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#111;
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin:5px;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+}
+
+.project a{
+display:inline-block;
+margin-top:10px;
+background:#111;
+color:white;
+padding:8px 15px;
+border-radius:5px;
+text-decoration:none;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h3>Osman</h3>
+
+<div>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<header>
+
+<h1>Osman Haj</h1>
+
+<p>Front-End Developer</p>
+
+<div class="buttons">
+
+<a class="btn" href="https://github.com/osmanhaj">GitHub</a>
+
+<a class="btn" href="#">Download CV</a>
+
+</div>
+
+</header>
+
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Landing Page</h3>
+
+<p>Responsive landing page.</p>
+
+<a href="https://osmanhaj.github.io/portfolio/landing-page">View Project</a>
+
+</div>
+
+<div class="project">
+
+<h3>Store Website</h3>
+
+<p>Simple online store layout.</p>
+
+<a href="https://osmanhaj.github.io/portfolio/store">View Project</a>
+
+</div>
+
+<div class="project">
+
+<h3>Dashboard</h3>
+
+<p>Admin dashboard interface.</p>
+
+<a href="https://osmanhaj.github.io/portfolio/dashboard">View Project</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p style="text-align:center">
+
+Email: your@email.com
+
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Osman Haj</p>
+
+</footer>
+
+</body>
+
+</html>header p{
 color:#bbb;
 }
 

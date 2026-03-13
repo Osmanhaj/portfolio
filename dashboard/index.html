@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+display:flex;
+background:#f4f6f9;
+}
+
+.sidebar{
+width:220px;
+background:#111;
+color:white;
+height:100vh;
+padding:20px;
+}
+
+.sidebar h2{
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+margin:15px 0;
+}
+
+.main{
+flex:1;
+padding:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Dashboard</h2>
+
+<a href="#">Overview</a>
+<a href="#">Users</a>
+<a href="#">Orders</a>
+<a href="#">Settings</a>
+
+</div>
+
+<div class="main">
+
+<h1>Admin Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Users</h3>
+<p>1200</p>
+</div>
+
+<div class="card">
+<h3>Orders</h3>
+<p>320</p>
+</div>
+
+<div class="card">
+<h3>Revenue</h3>
+<p>$12,000</p>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>John</td>
+<td>john@email.com</td>
+<td>Active</td>
+</tr>
+
+<tr>
+<td>Anna</td>
+<td>anna@email.com</td>
+<td>Active</td>
+</tr>
+
+<tr>
+<td>David</td>
+<td>david@email.com</td>
+<td>Inactive</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+
+</html>
